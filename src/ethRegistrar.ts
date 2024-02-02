@@ -28,7 +28,7 @@ import {
 // Import entity types generated from the GraphQL schema
 import { Account, Domain, Registration, NameRegistered, NameRenewed, NameTransferred } from './types/schema'
 
-var rootNode:ByteArray = byteArrayFromHex("4f45c7db7c79afee8015e44043a277e77c679fec4cf2314e1078af15c9b9d668")
+var rootNode:ByteArray = byteArrayFromHex("b19974734096add94dc7cb648670eaa1828d16bcf43241f75c57c941ef14694b")
 
 export function handleNameRegistered(event: NameRegisteredEvent): void {
   let account = new Account(event.params.owner.toHex())
